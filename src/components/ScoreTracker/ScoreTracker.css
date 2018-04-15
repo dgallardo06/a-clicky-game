@@ -1,0 +1,19 @@
+nav {
+    width: 100%;
+    font-size: 3rem;
+    color: #fff;
+    background-color: rgb(56, 56, 56);
+    height: auto;
+    font-family: 'Bungee', cursive;
+  }
+  
+nav li {
+    display: inline-block;
+    padding: 15px 0;
+    width: 25%;
+}
+  
+ul {
+    display: flex;
+    align-items: center;
+}
