@@ -75,26 +75,24 @@ class App extends React.Component {
 
         <div className="title">
         <h1>Bob's Burgers</h1>
-        <h4>Click on each character but careful not to click on it twice!</h4>
+        <h3>Click on each character but careful not to click on it twice!</h3>
         </div>
 
-        <container>
-          <row>
-            {this.state.burgers.map(burgers =>(
-              <column size="md-3 sm-6">
-                <BurgerCard
-                  id={burgers.id}
-                  key={burgers.id}
-                  image={burgers.image}
-                  handleClick={this.handleClick}
-                  handleIncrement={this.handleIncrement}
-                  handleReset={this.handleReset}
-                  handleShuffle={this.handleShuffle}
-                />
-              </column>
-            ))}
-          </row>
-        </container>
+        <div className="cards">
+          {this.state.burgers.map(burgers =>(
+            <column>
+              <BurgerCard
+                id={burgers.id}
+                key={burgers.id}
+                image={burgers.image}
+                handleClick={this.handleClick}
+                handleIncrement={this.handleIncrement}
+                handleReset={this.handleReset}
+                handleShuffle={this.handleShuffle}
+              />
+            </column>
+          ))}
+        </div>
       </Wrapper>
     );
   }

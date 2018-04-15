@@ -4,11 +4,11 @@ import "./BurgerCard.css";
 
 const BurgerCard = props => (
     
-    <div 
+    <div className="card"
     value={props.id} 
     onClick={() => {props.handleClick(props.id)}}
     >
-        <div className="img-thumbnail">
+        <div className="img-container">
             <img  alt={props.name} src={props.image} />
         </div>
     </div>

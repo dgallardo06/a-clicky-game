@@ -5,7 +5,6 @@ const ScoreTracker = props => (
 
     <nav>
         <ul>
-            <li>Clicky Game!</li>
             <li>{props.validate}</li>
             <li>Score: {props.score}</li>
             <li>Top Score: {props.topScore}</li>
